@@ -7,6 +7,17 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+}
+
+p{
+    font-size: 1.3em;
+    text-indent: 20px;
+    padding-bottom: 10px;
+}
+
+li{
+    font-size: 1.3em;
 }
 
 header{
@@ -48,7 +59,7 @@ main{
 
 .protofolio p{
     margin-bottom: 50px;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .perfil{
@@ -97,22 +108,41 @@ article.modulo-1 img{
     padding: 20px;
     display: block;
     margin: auto;
+    width: 30%;
+}
+
+pre code{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+dl,dt,dd{
+    font-size: 1.2em;
+    font-weight: normal;
+    padding: 5px;
+}
+
+
+article audio{
+    padding-top: 20px;
+    color: blue;
 }
 
 article.modulo-1 video{
     position: absolute;
     padding: 10px;
-    top: 5%;    
-    left: 5%;
-    width: 90%;
-    height: 90%;
+    top: 20%;    
+    left: 20%;
+    width: 50%;
+    height: 60%;
 }
 
 div.vidcontainer{
-    background-color: rgb(7, 61, 239);;
+    background-color: rgb(7, 61, 239);
     position: relative;
-    margin: 0px -10px 15px -10px;
-    padding-bottom: 57%;
+    margin: 20px -10px 15px 25%;
+    padding-bottom: 30%;
+    width: 60%; 
 }
 
 
@@ -121,6 +151,7 @@ div.cor1{
    display: inline-block;
    padding: 10px;
    margin: 10px;
+   margin-top: 20px;
 }
 
 section.modulo-2{
@@ -162,6 +193,10 @@ table{
     width: 500px;
 }
 
+td{
+    font-size: 1.3em;
+}
+
 td,th{
     border: 1px solid black;
     padding: 10px;
@@ -178,10 +213,10 @@ tr:nth-child(even){
 footer{
     margin-top: 10px;
     background-color: blue;
-    padding: 8px;
+    padding: 3px;
     text-align: center;
     color: white;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
