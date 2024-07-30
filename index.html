@@ -4,26 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/estilo.css">
     <title>Estudos</title>
 </head>
 <body>
     <header>
         <h1>Projeto Portfólio de Estudos</h1>
-        <p>por Willton Da Costa Xavier</p>
+        <p>por: <a href="#">Willton Da Costa Xavier</a></p>
     </header>
 
-    <main>
-        <article>
-            <picture>
-                <img src="" alt="">
-            </picture>
+    <main class="container">
 
+        <div class="protofolio">
+           
+            <img src="imagem/perfil.png" alt="" class="perfil">
+            
             <p>Este Portfólio tem o objetivo de colocar em prática todos os conhecimentos adquiridos ao longo dos três módulos de HTML5 e CSS3 do Curso em Vídeo, bem como o curso de JavaScript e PHP. Ao longo do site explicarei detalhadamente os objetivos de cada comando, tag e função assimilada durante os cursos feitos. <br>
             É de ressaltar que durante o meu período acadêmico na Universidade A Politécnica, aprendi a linguagem de programação Java e a utilizar a linguagem de manipulação de banco de dados MySQL.</p>
+        </div>
 
+        <div class="texto-secundario-protofolio">
             <h1>Conceitos e matérias assimiladas</h1>
-
             <h2>HTML5 e CSS3</h2>
+        </div>
+
+        <article class="modulo-1">
+           
             <h3>Modulo 1</h3>
             <h4>Parágrafos e quebra de linha.</h4>
             <p>Nesta aula, aprendi a utilizar a tag 'p' e '/p' para iniciar um parágrafo, assim como a tag 'br', utilizada para fazer uma quebra de linha.</p>
@@ -94,8 +100,209 @@
                 <li><a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s">Curso de HTML5 e CSS3 Modulo 2</a></li>
                 <li><a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dmcAviDwiGgHbeEJToxbOpZ">Curso de HTML5 e CSS3 Modulo 3</a></li>
             </ul>
+
+            <h4>Links dos meus Projectos</h4>
+            <ul>
+                <li><a href="files/Stock.zip" type="aplication/zip">Projecto de Gestao deProdutos para o Tribunal Supremo (SGSTS) feito em Java</a></li>
+                <li><a href="files/Loja_Virtual.zip" type="aplication/zip">Loja Virtual Simples feito em Java</a></li>
+                <li><a href="files/projecto-android.zip">Projecto de um site Android feito ao longo do curso de HTML5 e CSS3</a></li>
+                <li><a href="files/projecto-cordel.zip">Projecto de um site Cordel feito ao longo do curso de HTML5 e CSS3</a></li>
+            </ul>
+
+            <aside>
+                <h4>Imagens Dinamicas</h4>
+                <p>Utilizando a tag 'pictures' e a tag 'source:m' pode se criar imgens dinamicas</p>
+                <picture>
+                    <source media="(max-width: 950px)" srcset="imagem/pequena.png" type="image/png">
+                    <source media="(max-width: 1500px)" srcset="imagem/media.png" type="image/png">
+                    <img src="imagem/grande.png" alt="">
+                </picture>
+                <h4>Audio</h4>
+                <p>Utilizando a tag 'audio' pode se colocar audiono site, outra maneira e utilizando a tag 'source:src' dentro da tag 'audio'</p>
+                <audio controls loop>
+                    <source src="media/KENDRICK LAMAR - NOT LIKE US.mp3" type="audio/mp3">
+                </audio>
+                <h4>Video</h4>
+                <p>Utilizando a tag 'video' pode se colocar um video no site, para ver se o navegador e compativel com o video utiliza se a tag 'source:src' com os varios tipos de videos e o navegador ira escolher um para carregar.</p>
+                
+                <div class="vidcontainer">
+                    <video controls width="500px" poster="imagem/pexels-pato-500.png">
+                        <source src="media/video.mp4" type="video/mp4">
+                        <source src="media/video.ogv" type="video/ogv">
+                        <source src="media/Video.webm" type="video/webm">
+                        <p>Nenhum Tipo de Video e Compativel</p>
+                    </video>
+                </div>
+            </aside>
             
         </article>
+
+        <section class="modulo-2">
+            <h3>Modulo 2</h3>
+            <h4>Cores</h4>
+            <p>Pode se colocar cores de varias maneiras como por exemplo, usando o 'background-color:cor', 'background-color:#000000', 'background-color:rgb(00,00,255)' , 'background-color:hsl(matiz,saturacao,luminosidade)' e 'background-image: linear-gradient(directon, cor1, cor2 e cor3)'</p>
+
+           
+            <div style="width: 150px; height: 150px; background-color: red;" class="cor1"></div>
+            <div style="width: 150px; height: 150px; background-color: #f87823;" class="cor1"></div>
+            <div style="width: 150px; height: 150px; background-color: hsl(57, 93%, 53%);" class="cor1"></div>
+            <div style="width: 150px; height: 150px; background-image: linear-gradient(to bottom, red, #f87823, hsl(57, 93%, 53%));" class="cor1"></div>
+           
+
+            <h4>Fontes</h4>
+            <p>Utilizando a shorthand 'font:font-style, font-weight, font-size e font-family'</p>
+            <p>Pode se importar fontes com '@import url()' e pode se anexar fontes baixadas com '@font-face{}'</p>
+
+            <h4>Seletores Personalizados</h4>
+            <p>Pode se selecionar ou identificar uma tag com id em css com o comando '#nomedoid' e classes com '.nomeclasse'</p>
+            <p>Utilizando <strong>psedoclasses</strong> com ':' e <strong>psedoelementos</strong> com '::'</p>
+        </section>
+
+        <section class="modulo-3">
+            <h3>Modulo 3</h3>
+            <h4>Background Image</h4>
+            <p>Pode se colocar uma imagem de fundo com a shorthand 'background:cor, imagem, posicao, repeat, [size], attachtment'</p>
+            <div class="backimage"></div>
+            <p>Pode se tambem fazer um efeito Paralaxe</p>
+            <div class="paralaxe"></div>
+            <h4>Tabelas</h4>
+            <p>Utilizando a tag 'table' pode se criar uma tabela</p>
+            <p>Cada tabela tem coluns e linhas e pode se criar utilizando a tag 'tr' e 'td'</p>
+            <p>Pode se identificar a cabeca, o corpo e o pe de uma tabela usando as tags 'thead', 'tbody' e 'tfoot'</p>
+            <p>Pode se colocar legendas numa tabela com a tag 'caption'</p>
+            <p>Pode se identificar o escopo da tabela com o comando 'scope'</p>
+            <p>Utilizando o comando 'overflow' pode fazer com que as tabelas sejam responsivas</p>
+            <p>Por fim pode agrupar as tabelas com a tag 'colgroup'</p>
+            <div class="container-tabela">
+                <table>
+                    <caption>Tabelas Responsivas</caption>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Jan</th>
+                            <th>Fev</th>
+                            <th>Mar</th>
+                            <th>Abr</th>
+                            <th>Mai</th>
+                            <th>Jun</th>
+                            <th>Jul</th>
+                            <th>Ago</th>
+                            <th>Set</th>
+                            <th>Out</th>
+                            <th>Nov</th>
+                            <th>Dec</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TV 40"</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>10</td>
+                            <td>05</td>
+                            <td>02</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>Home Theater</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>10</td>
+                            <td>05</td>
+                            <td>02</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>Samsung Galaxy S21 Ultra</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>10</td>
+                            <td>05</td>
+                            <td>02</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>Ipad Mini</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>10</td>
+                            <td>05</td>
+                            <td>02</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>Playstation 5</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>10</td>
+                            <td>05</td>
+                            <td>02</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>Lava Loucas</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>10</td>
+                            <td>05</td>
+                            <td>02</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>Amazon Echo</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>10</td>
+                            <td>05</td>
+                            <td>02</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>01</td>
+                            <td>04</td>
+                            <td>16</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </main>
 
     <footer>

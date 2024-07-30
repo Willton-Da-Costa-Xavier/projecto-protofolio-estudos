@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    text-align: center;
+    background-color: rgba(11, 11, 138, 0.998);
+    color: white;
+    padding-bottom: 30px;
+}
+
+header h1{
+    font-size: 2.5em;
+    padding: 10px;
+}
+
+header p{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main{
+    padding: 10px;
+    margin: auto;
+}
+
+.protofolio{
+  text-align: justify;
+  text-indent: 10px; 
+}
+
+.protofolio p{
+    margin-bottom: 50px;
+    font-size: 1.2em;
+}
+
+.perfil{
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+.texto-secundario-protofolio h1{
+    background-image: linear-gradient(to right,rgb(13, 13, 117), rgba(7, 7, 237, 0.831));
+    font-size: 2.5em;
+    color: white;
+    font-weight: bold;
+}
+
+.texto-secundario-protofolio h2{
+    margin-top: 20px;
+    font-size: 2em;
+    color: rgba(11, 11, 138, 0.998);
+    font-weight: bold;
+}
+
+article.modulo-1 h3,h4,h5,p{
+    margin-top: 20px;
+}
+
+article.modulo-1 h3{
+    color: blue;
+    font-size: 1.7em;
+}
+
+article.modulo-1 h4{
+    font-size: 1.5em;
+}
+
+article.modulo-1 h5{
+    font-size: 1.2em;
+}
+
+article.modulo-1 h4,h5{
+    color: rgb(7, 61, 239);
+    font-weight: bold;
+}
+
+article.modulo-1 img{
+    padding: 20px;
+    display: block;
+    margin: auto;
+}
+
+article.modulo-1 video{
+    position: absolute;
+    padding: 10px;
+    top: 5%;    
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+div.vidcontainer{
+    background-color: rgb(7, 61, 239);;
+    position: relative;
+    margin: 0px -10px 15px -10px;
+    padding-bottom: 57%;
+}
+
+
+
+div.cor1{
+   display: inline-block;
+   padding: 10px;
+   margin: 10px;
+}
+
+section.modulo-2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section.modulo-2 h3{
+    color: blue;
+    padding-bottom: 30px;
+    font-size: 1.7em;
+}
+
+section.modulo-2 h4{
+    color: rgb(7, 61, 239);
+    font-size: 1.5em;
+}
+
+section.modulo-3 h3{
+    color: blue;
+    padding-bottom: 30px;
+    font-size: 1.7em;
+}
+
+section.modulo-3 h4{
+    color: rgb(7, 61, 239);
+    font-size: 1.5em;
+}
+
+caption{
+    font-size: 1.5em;
+    padding: 20px;
+    color:rgb(7, 61, 239);
+    font-weight: bolder;
+}
+
+table{
+    border-collapse: collapse;
+    width: 500px;
+}
+
+td,th{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+tr:nth-child(even){
+    background-color: rgba(156, 152, 146, 0.42);
+}
+
+.container-tabela{
+    overflow-x: auto;
+}
+
+footer{
+    margin-top: 10px;
+    background-color: blue;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
