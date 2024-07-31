@@ -132,7 +132,7 @@ article.modulo-1 video{
     position: absolute;
     padding: 10px;
     top: 20%;    
-    left: 10%;
+    left: 5%;
     width: 80%;
     height: 60%;
 }
@@ -140,9 +140,9 @@ article.modulo-1 video{
 div.vidcontainer{
     background-color: #4B7A67;
     position: relative;
-    margin: 20px -10px 15px 25%;
+    margin: 20px -10px 15px 0%;
     padding-bottom: 50%;
-    width: 60%; 
+    width: 100%; 
 }
 
 
