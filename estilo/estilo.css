@@ -181,6 +181,15 @@ section.modulo-3 h4{
     font-size: 1.5em;
 }
 
+.paralaxe{
+    width: 100%;
+    height: 500px;
+    background-image: url("../imagem/background001.jpg");
+    background-position: center right;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 caption{
     font-size: 1.5em;
     padding: 20px;
