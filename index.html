@@ -10,7 +10,7 @@
 <body>
     <header>
         <h1>Projeto Portfólio de Estudos</h1>
-        <p>por: <a href="#">Willton Da Costa Xavier</a></p>
+        <p>por: <a href="https://github.com/Willton-Da-Costa-Xavier?tab=repositories" target="_blank" rel="external">Willton Da Costa Xavier</a></p>
     </header>
 
     <main class="container">
@@ -68,8 +68,8 @@
                     int n1 = 2;
                     int n2 = 3;
                     int s = 0;
-
-                    System.out.println("A soma de "+n1+"+"+n2+"e igual a: "+s);
+                    s=n1+n2;
+                    System.out.println(s);
                 </code>
             </pre>
 
@@ -113,14 +113,14 @@
                 <h4>Imagens Dinamicas</h4>
                 <p>Utilizando a tag <strong>'pictures'</strong> e a tag <strong>'source:m'</strong> pode se criar imgens dinamicas</p>
                 <picture>
-                    <source media="(max-width: 950px)" srcset="imagem/pequena.png" type="image/png">
-                    <source media="(max-width: 1500px)" srcset="imagem/media.png" type="image/png">
+                    <source media="(max-width: 750px)" srcset="imagem/pequena.png" type="image/png">
+                    <source media="(max-width: 1000px)" srcset="imagem/media.png" type="image/png">
                     <img src="imagem/grande.png" alt="">
                 </picture>
                 <h4>Audio</h4>
                 <p>Utilizando a tag <strong>'audio'</strong> pode se colocar audiono site, outra maneira e utilizando a tag <strong>'source:src'</strong> dentro da tag <strong>'audio'</strong></p>
                 <audio controls loop>
-                    <source src="media/Intro_Store.mp3" type="audio/mp3">
+                    <source src="media/StockTune-Dreams In Shadow_1722411263.mp3" type="audio/mp3">
                 </audio>
                 <h4>Video</h4>
                 <p>Utilizando a tag <strong>'video'</strong> pode se colocar um video no site, para ver se o navegador e compativel com o video utiliza se a tag <strong>'source:src'</strong> com os varios tipos de videos e o navegador ira escolher um para carregar.</p>
@@ -306,7 +306,7 @@
     </main>
 
     <footer>
-        <p>Site criado por <a href="https://github.com/Willton-Da-Costa-Xavier?tab=repositories" target="_blank" rel="external">Willton Xavier</a> pelo <a href="https://cursoemvideo.com" target="_blank" rel="external">Curso em Video</a></p>
+        <p>Site criado por Willton Xavier pelo <a href="https://cursoemvideo.com" target="_blank" rel="external">Curso em Video</a></p>
     </footer>
 
 </body>
